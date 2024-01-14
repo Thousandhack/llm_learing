@@ -4,8 +4,7 @@
 import os
 
 from openai import OpenAI
-# os.getenv("OPENAI_API_KEY")
-OPENAI_API_KEY = "my_open_ai_key"
+from conf import OPENAI_API_KEY
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 prompt = f"""
